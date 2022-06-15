@@ -1,5 +1,7 @@
 # xPYTFactory
 
+GitHub: [link](https://github.com/timeless-fi/xPYT/blob/main/src/xPYTFactory.sol)
+
 Factory for deploying xPYT contracts
 
 ## Events

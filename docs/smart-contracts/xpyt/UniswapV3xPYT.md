@@ -1,8 +1,8 @@
-# xPYT
+# UniswapV3xPYT
 
-GitHub: [link](https://github.com/timeless-fi/xPYT/blob/main/src/xPYT.sol)
+GitHub: [link](https://github.com/timeless-fi/xPYT/blob/main/src/uniswap-v3/UniswapV3xPYT.sol)
 
-Permissionless auto-compounding vault for Timeless perpetual yield tokens
+xPYT implementation using Uniswap V3 to swap NYT into PYT
 
 ## Errors
 
@@ -22,6 +22,30 @@ error Error_InvalidMultiplierValue()
 
 ```solidity
 error Error_ConsultTwapOracleFailed()
+```
+
+### Error_NotUniswapV3Pool
+
+```solidity
+error Error_NotUniswapV3Pool()
+```
+
+### Error_BothTokenDeltasAreZero
+
+```solidity
+error Error_BothTokenDeltasAreZero()
+```
+
+## Structs
+
+### SwapCallbackData
+
+```solidity
+struct SwapCallbackData {
+  contract ERC20 tokenIn;
+  contract ERC20 tokenOut;
+  uint24 fee;
+}
 ```
 
 ## Events
@@ -53,6 +77,24 @@ uint256 ONE
 ```
 
 The base unit for fixed point decimals.
+
+### MIN_SQRT_RATIO_PLUS_ONE
+
+```solidity
+uint160 MIN_SQRT_RATIO_PLUS_ONE
+```
+
+_The minimum value that can be returned from #getSqrtRatioAtTick + 1. Equivalent to getSqrtRatioAtTick(MIN_TICK) + 1
+Copied from v3-core/libraries/TickMath.sol_
+
+### MAX_SQRT_RATIO_MINUS_ONE
+
+```solidity
+uint160 MAX_SQRT_RATIO_MINUS_ONE
+```
+
+_The maximum value that can be returned from #getSqrtRatioAtTick - 1. Equivalent to getSqrtRatioAtTick(MAX_TICK) - 1
+Copied from v3-core/libraries/TickMath.sol_
 
 ## Immutable parameters
 
@@ -96,6 +138,40 @@ uint256 pounderRewardMultiplier
 ```
 
 The proportion of the yield claimed in pound() to give to the caller as reward. Scaled by ONE.
+
+### uniswapV3Factory
+
+```solidity
+address uniswapV3Factory
+```
+
+The official Uniswap V3 factory address
+
+### uniswapV3Quoter
+
+```solidity
+contract IQuoter uniswapV3Quoter
+```
+
+The Uniswap V3 Quoter deployment
+
+### uniswapV3PoolFee
+
+```solidity
+uint24 uniswapV3PoolFee
+```
+
+The fee used by the Uniswap V3 pool used for swapping
+
+### uniswapV3Quoter
+
+```solidity
+uint32 uniswapV3TwapSecondsAgo
+```
+
+The number of seconds in the past from which to take the TWAP of the Uniswap V3 pool
+
+## State variables
 
 ### assetBalance
 

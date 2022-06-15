@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Gate
 
+GitHub: [link](https://github.com/timeless-fi/timeless/blob/main/src/Gate.sol)
+
 Gate is the main contract users interact with to mint/burn NegativeYieldToken
 and PerpetualYieldToken, as well as claim the yield earned by PYTs.
 
