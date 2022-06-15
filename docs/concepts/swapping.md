@@ -16,11 +16,11 @@ Fortunately, we have a solution that avoids all of these issues.
 
 ## How it works
 
-Timeless uses Uniswap v3 as the underlying exchange. Liquidity providers provide xPYT/NYT liquidity.
+Timeless uses [Uniswap v3](https://uniswap.org/) as the underlying exchange. Liquidity providers provide xPYT⟷NYT liquidity.
 
 When users initiate a swap, they interact with a [Swapper](smart-contracts/swapper/intro) contract.
 
-When a user swaps from the underlying asset to xPYT or NYT, the Swapper uses the underlying to mint xPYT and NYT, and then sells the undesired token on the exchange.
+When a user swaps from the underlying asset to xPYT / NYT, the Swapper uses the underlying to mint xPYT and NYT, and then sells the undesired token on the exchange.
 
 When a user swaps from xPYT / NYT to the underlying asset, the Swapper does a swap on the exchange and then burn the xPYT and NYT together into the underlying asset.
 
