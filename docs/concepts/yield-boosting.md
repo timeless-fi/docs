@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Yield Boosting
 
-Yield boosting refers to the strategy where instead of depositing your funds into a farm (e.g. Yearn USDC vault), you use your funds to purchase the corresponding [PYT](concepts/pyt) on the market (e.g. Yearn USDC vault PYT).
+Yield boosting refers to the strategy where instead of depositing your funds into a farm (e.g. Yearn USDC vault), you use your funds to purchase the corresponding [PYT](./pyt) on the market (e.g. Yearn USDC vault PYT).
 
 ## Pros
 

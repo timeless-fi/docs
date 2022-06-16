@@ -7,7 +7,7 @@ sidebar_position: 5
 Yield hedging refers to the strategy where:
 
 - Part of your portfolio is earning yield directly, from platforms such as [Aave](https://aave.com)
-- You buy some [NYT](concepts/nyt) corresponding to the same yield source
+- You buy some [NYT](./nyt) corresponding to the same yield source
 
 Because the price of NYT moves in the opposite direction as the yield rate,
 

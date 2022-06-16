@@ -18,7 +18,7 @@ Fortunately, we have a solution that avoids all of these issues.
 
 Timeless uses [Uniswap v3](https://uniswap.org/) as the underlying exchange. Liquidity providers provide xPYT⟷NYT liquidity.
 
-When users initiate a swap, they interact with a [Swapper](smart-contracts/swapper/intro) contract.
+When users initiate a swap, they interact with a [Swapper](/docs/smart-contracts/swapper/intro) contract.
 
 When a user swaps from the underlying asset to xPYT / NYT, the Swapper uses the underlying to mint xPYT and NYT, and then sells the undesired token on the exchange.
 

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 GitHub repo: [link](https://github.com/timeless-fi/swapper)
 
-[Swapper](./swapper) is an abstract contract that defines the interface traders use to swap between xPYTs/PYTs/NYTs and their underlying assets. It also supports using [0x](https://0x.org) as an intermediate step during a swap.
+[Swapper](./Swapper-Contract) is an abstract contract that defines the interface traders use to swap between xPYTs/PYTs/NYTs and their underlying assets. It also supports using [0x](https://0x.org) as an intermediate step during a swap.
 
 Implementations of `Swapper` each support an underlying exchange protocol. Currently, only [UniswapV3Swapper](./UniswapV3Swapper) is implemented.
 
