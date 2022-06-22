@@ -14,3 +14,7 @@ Yield boosting refers to the strategy where instead of depositing your funds int
 ## Cons
 
 - If the yield rate goes down, your portfolio goes down. This is the main risk of yield boosting.
+
+## How do you do it?
+
+Go to the [Boost page](https://timelessfi.com/boost) of our website to start using yield boosting.

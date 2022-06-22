@@ -19,3 +19,7 @@ In short, **holding NYT as part of your portfolio decreases the volatility of th
 However, it's important to note that the price of NYT moves more when the yield rate goes down than when it goes up (see [this post](https://blog.timelessfi.com/posts/pyt-pricing/#observations)), meaning the benefit of yield hedging outweights the downside risks.
 
 Another way to do yield hedging is by simply holding a portfolio of PYT & NYT, with more NYT than PYT. The PYT combines with an equal amount of NYT to be equivalent to directly depositing into the underlying yield source, and the remaining NYT decreases the yield volatility. By adjusting the PYT:NYT ratio, you can adjust how much you want to decrease the yield volatility.
+
+## How do you do it?
+
+Go to the [Swap page](https://timelessfi.com/swap) of our website to buy NYT and hedge against rate downturns.
