@@ -8,7 +8,7 @@ Yield boosting refers to the strategy where instead of depositing your funds int
 
 ## Pros
 
-- Because PYT trades at a price lower than the underlying asset (see [this post](https://blog.timelessfi.com/posts/pyt-pricing/#observations)), using the yield boosting strategy can give you a 1-2x multiplier on the yield you earn.
+- Because PYT trades at a price lower than the underlying asset (see [here](./pyt#observations)), using the yield boosting strategy can give you a 1-2x multiplier on the yield you earn.
 - If the yield rate goes up, your portfolio goes up.
 
 ## Cons

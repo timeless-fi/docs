@@ -20,7 +20,7 @@ Use the [Pool page](https://timelessfi.com/pool) on the TImeless website to view
 
 ![Example liquidity position](img/lp-example.png)
 
-First of all, the price of 1 xPYT should always be at least 1 NYT, thus the lower price bound should be >=1 NYT. (To understand why, please read [this post](https://blog.timelessfi.com/posts/pyt-pricing/))
+First of all, the price of 1 xPYT should always be at least 1 NYT, thus the lower price bound should be >=1 NYT. (To understand why, please read [the PYT docs](./pyt))
 
 Secondly, the price of xPYT can theoretically go up to infinite NYT, but practically speaking something like 99 NYT should be large enough for the upper price bound. 1 PYT = 99 NYT corresponds to 1 PYT = 0.99 in terms of the underlying asset (e.g. USDC), which is very close to the upper limit of 1.
 
