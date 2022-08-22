@@ -79,6 +79,12 @@ const config = {
                     },
                     {
                         type: "doc",
+                        docId: "guides/lp",
+                        position: "left",
+                        label: "Guides",
+                    },
+                    {
+                        type: "doc",
                         docId: "smart-contracts/architecture",
                         position: "left",
                         label: "Smart Contracts",
