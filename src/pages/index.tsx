@@ -35,7 +35,7 @@ export const Guides = [
     {
         title: "Providing Liquidity",
         text: "Learn about how to provide liquidity for Timeless yield tokens",
-        to: "./docs/concepts/lp",
+        to: "./docs/guides/lp",
     },
     {
         title: "Smart Contract Architecture",
