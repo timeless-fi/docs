@@ -8,8 +8,8 @@ const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Timeless Docs",
-    url: "https://docs.timelessfi.com",
+    title: "Bunni Docs",
+    url: "https://docs.bunni.pro",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
@@ -17,7 +17,7 @@ const config = {
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: "timeless-fi", // Usually your GitHub org/user name.
+    organizationName: "bunniapp", // Usually your GitHub org/user name.
     projectName: "docs", // Usually your repo name.
 
     // Even if you don't use internalization, you can use this field to set useful
@@ -59,9 +59,9 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             navbar: {
-                title: "Timeless Docs",
+                title: "Bunni Docs",
                 logo: {
-                    alt: "Timeless",
+                    alt: "Bunni",
                     src: "img/logo.png",
                 },
                 items: [
@@ -73,9 +73,9 @@ const config = {
                     },
                     {
                         type: "doc",
-                        docId: "concepts/yield-tokenization",
+                        docId: "tokenomics/lit",
                         position: "left",
-                        label: "Concepts",
+                        label: "Tokenomics",
                     },
                     {
                         type: "doc",
@@ -84,13 +84,7 @@ const config = {
                         label: "Guides",
                     },
                     {
-                        type: "doc",
-                        docId: "smart-contracts/architecture",
-                        position: "left",
-                        label: "Smart Contracts",
-                    },
-                    {
-                        href: "https://github.com/timeless-fi/docs",
+                        href: "https://github.com/bunniapp/docs",
                         label: "GitHub",
                         position: "right",
                     },
@@ -103,16 +97,16 @@ const config = {
                         title: "Github",
                         items: [
                             {
-                                label: "timeless",
-                                href: "https://github.com/timeless-fi/timeless",
+                                label: "bunni",
+                                href: "https://github.com/zeframlou/bunni",
                             },
                             {
-                                label: "swapper",
-                                href: "https://github.com/timeless-fi/swapper",
+                                label: "gauge-foundry",
+                                href: "https://github.com/timeless-fi/gauge-foundry",
                             },
                             {
-                                label: "xPYT",
-                                href: "https://github.com/timeless-fi/xPYT",
+                                label: "options-token",
+                                href: "https://github.com/timeless-fi/options-token",
                             },
                         ],
                     },
@@ -134,7 +128,7 @@ const config = {
                         items: [
                             {
                                 label: "Home page",
-                                href: "https://timelessfi.com",
+                                href: "https://bunni.pro",
                             },
                             {
                                 label: "Blog",

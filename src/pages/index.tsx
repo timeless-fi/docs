@@ -10,37 +10,37 @@ import styles from "./index.module.css";
 
 export const github = [
     {
-        title: "timeless",
-        href: "https://github.com/timeless-fi/timeless",
+        title: "bunni",
+        href: "https://github.com/zeframlou/bunni",
         icon: CodeIcon,
     },
     {
-        title: "swapper",
-        href: "https://github.com/timeless-fi/swapper",
+        title: "gauge-foundry",
+        href: "https://github.com/timeless-fi/gauge-foundry",
         icon: CodeIcon,
     },
     {
-        title: "xPYT",
-        href: "https://github.com/timeless-fi/xPYT",
+        title: "options-token",
+        href: "https://github.com/timeless-fi/options-token",
         icon: CodeIcon,
     },
 ];
 
 export const Guides = [
     {
-        title: "What is Timeless?",
-        text: "Read a general overview of Timeless",
+        title: "What is Bunni?",
+        text: "Read a general overview of Bunni",
         to: "./docs/intro",
     },
     {
-        title: "Providing Liquidity",
-        text: "Learn about how to provide liquidity for Timeless yield tokens",
+        title: "Providing Liquidity & Earn oLIT",
+        text: "Learn about how to provide liquidity on Uniswap via Bunni and earn gauge rewards",
         to: "./docs/guides/lp",
     },
     {
-        title: "Smart Contract Architecture",
-        text: "Understand how Timeless smart contracts fit together",
-        to: "./docs/smart-contracts/architecture",
+        title: "Tokenomics",
+        text: "Understand how $LIT is used to incentivize long-term liquidity",
+        to: "./docs/tokenomics/lit",
     },
 ];
 
@@ -129,7 +129,7 @@ export default function Home(): JSX.Element {
     return (
         <Layout
             title={`${siteConfig.title}`}
-            description="Documentation of Timeless Finance"
+            description="Documentation of Bunni"
         >
             <HomepageHeader />
             <main>
@@ -142,8 +142,7 @@ export default function Home(): JSX.Element {
                     <div>
                         <h2>Getting Started</h2>
                         <p>
-                            Explore these docs to get started integrating Timeless in your dApp, smart contract or
-                            project.
+                            Explore these docs to start using Bunni.
                         </p>
                         <div>
                             {Guides.map((action) => (
@@ -194,7 +193,7 @@ export default function Home(): JSX.Element {
                     <div>
                         <h2>Developer Links</h2>
                         <p>
-                            The Timeless codebase is comprised of an ecosystem of
+                            The Bunni codebase is comprised of an ecosystem of
                             open source components.
                         </p>
                         {github.map((action) => (
