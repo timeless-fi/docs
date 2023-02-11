@@ -17,3 +17,9 @@ Bunni gauges are based on Curve gauges. Read the [Curve docs](https://curve.read
 ## How to boost your oLIT rewards
 
 Holding veLIT will boost the amount of rewards you receive. The more veLIT you hold, the more rewards you receive (up to a point). See [boosting](./boosting) to learn more.
+
+## What happens when the LP position of a gauge goes out of range?
+
+Bunni uses our [Uniswap Price-out-of-range oracle](https://github.com/timeless-fi/uniswap-poor-oracle) to determine if a gauge's position is out of range. If it is, then the gauge is killed and stops receiving oLIT rewards. The oLIT rewards directed to the killed gauge are burnt.
+
+See [Killing an out-of-range gauge](../guides/kill-gauge) to learn more.
