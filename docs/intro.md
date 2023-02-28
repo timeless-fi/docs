@@ -8,7 +8,7 @@ Bunni is a liquidity engine for incentivizing Uniswap v3 liquidity.
 
 Bunni has two parts: a protocol that wraps Uniswap liquidity positions into fungible ERC-20 tokens, and a vetokenomics system for incentivizing Bunni liquidity.
 
-The combination of a robust incentivization system and concentrated liquidity makes Bunni on track to be the most efficiency method for incentivizing DEX liquidity. 
+The combination of a robust incentivization system and concentrated liquidity makes Bunni on track to be the most efficient method for incentivizing DEX liquidity. 
 
 ## Uniswap wrapper
 
