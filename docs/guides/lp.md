@@ -6,6 +6,10 @@ sidebar_position: 1
 
 This guide will walk you through the process of providing liquidity on Bunni and staking it for rewards, as well as how to just provide liquidity and for staking on protocols like Liquis.
 
+If you prefer to see a walkthrough, consider watching the video below:
+
+[![Watch the video](http://img.youtube.com/vi/HBHGHzF_sDY/0.jpg)](https://www.youtube.com/watch?v=HBHGHzF_sDY)
+
 Providing Liquidity and Staking on Bunni
 ----------------------------------------
 
@@ -26,7 +30,3 @@ Providing Liquidity and Staking on Bunni
 *   Over time, you will earn rewards for staking your LP tokens.
 *   To collect these rewards, navigate back to the "Portfolio" section.
 *   Click on "Claim oLIT" to claim your rewards.
-
-If you prefer to see a walkthrough, consider watching the video below:
-
-[![Watch the video](http://img.youtube.com/vi/HBHGHzF_sDY/0.jpg)](https://www.youtube.com/watch?v=HBHGHzF_sDY)
