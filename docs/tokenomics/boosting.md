@@ -20,7 +20,7 @@ This means that if an LP has no vetokens, their liquidity is multiplied by 0.4x 
 
 Bunni modifies the Curve model by changing the parameters such that the formula becomes:
 $$
-w = \min (l, 0.1l + 0.9L\frac{v}{V})
+w = \min (l, 0.2l + 0.8L\frac{v}{V})
 $$
 Which translates into increasing the max boost from 2.5x to 5x. This makes holding veLIT more attractive & powerful and increases the veLIT holding rate amongst LPs.
 
