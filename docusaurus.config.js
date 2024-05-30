@@ -67,19 +67,19 @@ const config = {
                 items: [
                     {
                         type: "doc",
-                        docId: "intro",
+                        docId: "introduction",
                         position: "left",
                         label: "Introduction",
                     },
                     {
                         type: "doc",
-                        docId: "tokenomics/lit",
+                        docId: "v1/tokenomics/lit",
                         position: "left",
                         label: "Tokenomics",
                     },
                     {
                         type: "doc",
-                        docId: "guides/lp",
+                        docId: "v1/guides/lp",
                         position: "left",
                         label: "Guides",
                     },

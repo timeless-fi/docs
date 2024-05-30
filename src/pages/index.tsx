@@ -30,17 +30,17 @@ export const Guides = [
     {
         title: "What is Bunni?",
         text: "Read a general overview of Bunni",
-        to: "./docs/intro",
+        to: "./docs/introduction",
     },
     {
         title: "Providing Liquidity & Earn oLIT",
         text: "Learn about how to provide liquidity on Uniswap via Bunni and earn gauge rewards",
-        to: "./docs/guides/lp",
+        to: "./docs/v1/guides/lp",
     },
     {
         title: "Tokenomics",
         text: "Understand how $LIT is used to incentivize long-term liquidity",
-        to: "./docs/tokenomics/lit",
+        to: "./docs/v1/tokenomics/lit",
     },
 ];
 
