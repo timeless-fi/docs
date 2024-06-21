@@ -10,18 +10,8 @@ import styles from "./index.module.css";
 
 export const github = [
     {
-        title: "bunni",
-        href: "https://github.com/zeframlou/bunni",
-        icon: CodeIcon,
-    },
-    {
-        title: "gauge-foundry",
-        href: "https://github.com/timeless-fi/gauge-foundry",
-        icon: CodeIcon,
-    },
-    {
-        title: "options-token",
-        href: "https://github.com/timeless-fi/options-token",
+        title: "bunni-hooks",
+        href: "https://github.com/timeless-fi/bunni-hooks",
         icon: CodeIcon,
     },
 ];
@@ -29,18 +19,18 @@ export const github = [
 export const Guides = [
     {
         title: "What is Bunni?",
-        text: "Read a general overview of Bunni",
-        to: "./docs/introduction",
+        text: "Read a general overview of Bunni v2",
+        to: "./docs/v2/overview",
     },
     {
-        title: "Providing Liquidity & Earn oLIT",
-        text: "Learn about how to provide liquidity on Uniswap via Bunni and earn gauge rewards",
-        to: "./docs/v1/guides/lp",
+        title: "Providing Liquidity",
+        text: "Learn about how to provide liquidity on Bunni v2",
+        to: "./docs/v2/guides/creating-a-pool/initialization",
     },
     {
-        title: "Tokenomics",
-        text: "Understand how $LIT is used to incentivize long-term liquidity",
-        to: "./docs/v1/tokenomics/lit",
+        title: "Example Scenarios",
+        text: "Explore example token pair scenarios and how to design strategies for them",
+        to: "./docs/v2/concepts/examples",
     },
 ];
 

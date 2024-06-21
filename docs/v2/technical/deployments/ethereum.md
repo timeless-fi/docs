@@ -12,16 +12,16 @@ The latest version of the Bunni V2 contracts are deployed at the addresses liste
 
 | Contract | Sepolia Addresses |
 | --------------- | --------------- |
-| [BunniHub](https://github.com/timeless-fi/bunni-hooks/blob/main/src/BunniHub.sol) | `0xAe186fdB6c547B5CCF041507E4Ce5a4EC2b174F9` |
-| [BunniHook](https://github.com/timeless-fi/bunni-hooks/blob/main/src/BunniHook.sol) | `0x2199c73F63A1c1F68cf4E7f8a72DeC94d2ea1888` |
-| [BunniZone](https://github.com/timeless-fi/bunni-hooks/blob/main/src/BunniZone.sol) | `0xFfE152101056244Cad3C1EeA14B8747326ea152c` |
+| [BunniHub](https://github.com/timeless-fi/bunni-hooks/blob/main/src/BunniHub.sol) | `0x73c1731586EDe055f9052f0199eF31d4CB04A44a` |
+| [BunniHook](https://github.com/timeless-fi/bunni-hooks/blob/main/src/BunniHook.sol) | `0x730B5fEA5CE828ca7cBcc5ecEAc789d11E8A9888` |
+| [BunniZone](https://github.com/timeless-fi/bunni-hooks/blob/main/src/BunniZone.sol) | `0xBe59b59D78643D2575EedeAD91524149cc0be984` |
 
 ### Periphery
 
 | Contract | Sepolia Addresses |
 | --------------- | --------------- |
-| [BunniQuoter](https://github.com/timeless-fi/bunni-hooks/blob/main/src/periphery/BunniQuoter.sol) | `0x559Cc4B0185ea2a4193347257D044E371Dac7118` |
-| BunniLens | `0xbE24a7357F13d831a4ff806E6C0cB4D5EfF625f4` |
+| [BunniQuoter](https://github.com/timeless-fi/bunni-hooks/blob/main/src/periphery/BunniQuoter.sol) | `0xD1d662d3e3dd0B24fAd99b8264E2183Ee838C15e` |
+| BunniLens | `0x28190e534814194198a9E8c70FD125fd1a3cD6a7` |
 | Uniswapper | `0xD5AF63d8e0E23bbd254F04F86558F7F84d8F85eb` |
 
 
@@ -29,8 +29,9 @@ The latest version of the Bunni V2 contracts are deployed at the addresses liste
 
 | Liquidity Density Function | Sepolia Addresses |
 | --------------- | --------------- |
-| [Uniform](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/UniformDistribution.sol) | `0x112600019348210269B9257951dE5C2AED2B7Aae` |
-| [Geometric](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/GeometricDistribution.sol) | `0xdB1C65407BA191bE5deD5b541d00a1857253A015` |
-| [Double Geometric](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/DoubleGeometricDistribution.sol) | `0xd1B62B664b97861c5bF06706EED447D9fDC35231` |
-| [Carpeted Geometric](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/CarpetedGeometricDistribution.sol) | `0xbEc14b6A62f43D34bF6a476adbDa9767634c6Bbe` |
-| [Carpeted Double Geometric](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/CarpetedDoubleGeometricDistribution.sol) | `0x9219f226351eCcd505936543d256A3Ed195eed58` |
+| [Uniform](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/UniformDistribution.sol) | `0xBFE60f5c04EA77a1BDf4Dd7EeEf8Ff8176F83941` |
+| [Geometric](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/GeometricDistribution.sol) | `0xb4BCDbcF782ac2905232De29FaB24930623777bb` |
+| [Double Geometric](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/DoubleGeometricDistribution.sol) | `0xc25F8F6E0867527b224d72084C5C4EcEd2f87244` |
+| [Carpeted Geometric](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/CarpetedGeometricDistribution.sol) | `0x44b55db96956d9a8c0c99bEdF3ED7a7fd890F586` |
+| [Carpeted Double Geometric](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/CarpetedDoubleGeometricDistribution.sol) | `0xB8A94d7a3A63CD981E81C71170AF9b8F85D72434` |
+| [Buy-the-dip Geometric](https://github.com/timeless-fi/bunni-hooks/blob/main/src/ldf/BuyTheDipGeometricDistribution.sol) | `0x3577AeF2A370ACFF196dB9c436310d1235Cb963C` |

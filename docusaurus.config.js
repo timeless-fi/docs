@@ -67,19 +67,13 @@ const config = {
                 items: [
                     {
                         type: "doc",
-                        docId: "introduction",
+                        docId: "v2/overview",
                         position: "left",
                         label: "Introduction",
                     },
                     {
                         type: "doc",
-                        docId: "v1/tokenomics/lit",
-                        position: "left",
-                        label: "Tokenomics",
-                    },
-                    {
-                        type: "doc",
-                        docId: "v1/guides/lp",
+                        docId: "v2/guides/creating-a-pool/initialization",
                         position: "left",
                         label: "Guides",
                     },
