@@ -1,6 +1,6 @@
 ---
 title: Liquidity Density Functions
-hide_table_of_contents: true
+hide_table_of_contents: false
 sidebar_position: 1
 ---
 
