@@ -12,18 +12,13 @@ Bunni v2 is a revolutionary Automated Market Maker (AMM) that introduces several
 ## Key Features
 
 1. [**Liquidity Density Functions (LDFs)**](./concepts/ldf): Enable efficient liquidity distribution, modification, and swaps with constant gas costs.
-
 2. [**Shapeshifting**](./concepts/shapeshifting): Allow LPs to provide liquidity in complex shapes and seamlessly shift or switch between these shapes, either manually or programmatically.
-
 3. [**Autonomous Rebalancing**](./concepts/rebalancing): Eliminate the need for external keepers to maintain optimal token ratios.
-
 4. [**Surge Fee**](./concepts/surge): Protect against sandwiching attacks during autonomous liquidity modifications.
-
 5. [**Rehypothecation**](./concepts/rehypothication): Utilize idle assets to earn additional yield from external protocols.
-
 6. [**am-AMM**](./concepts/amamm): Recapture MEV and optimize swap fee revenue using an auction-managed mechanism.
-
-7. [**Volatility-based Swap Fee**](./concepts/fees): Implement a dynamic fee model based on price volatility.
+7. [**Volatility-based Swap Fee**](./concepts/fees): Dynamic fee model based on price volatility.
+8. **Auto-compounding**: Automatically compound swap fees back into the liquidity position.
 
 ## Why Bunni v2?
 
@@ -32,6 +27,7 @@ Bunni v2 addresses several shortcomings of previous AMM designs, particularly Un
 - Complex liquidity shapes can now be created and managed with a single position, rather than multiple positions.
 - Liquidity can now be efficiently moved or reshaped without removing and recreating positions.
 - Swap gas costs are now constant, regardless of the number of ticks crossed.
+- Swap fees are now auto-compounded back into liquidity, rather than requiring users to manually claim & compound.
 
 By combining these innovations, Bunni v2 creates a new generation of "shapeshifting" AMMs with concentrated liquidity that is automated, highly customizable, and infinitely programmable.
 

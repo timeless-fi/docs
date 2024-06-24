@@ -11,6 +11,7 @@ sidebar_position: 2
 Bunni v2 supports three types of shapeshifting:
 
 1. **Shifting**: Changing the origin $\mu$ of the LDF, which shifts liquidity across the rick space.
+   - Shifting can be enabled in both directions or be restricted to a single direction
 2. **Morphing**: Modifying the parameters of the LDF to change the shape of the liquidity distribution.
 3. **Switching**: Completely changing from one LDF to another.
 
