@@ -134,7 +134,7 @@ Observe the given pool for the timestamps.
 
 ```solidity
 function isValidParams(
-    bytes32 hookParams
+    bytes calldata hookParams
 ) external view returns (bool)
 ```
 
@@ -144,7 +144,7 @@ Validates if the given hook params are valid.
 
 | Name         | Type    | Description       |
 | ------------ | ------- | ----------------- |
-| `hookParams` | bytes32 | The hook params   |
+| `hookParams` | bytes   | The hook params   |
 
 #### Return Value:
 
@@ -334,21 +334,23 @@ Set the FloodZone contract address. Only callable by the owner.
 | ------ | ----- | ------------------------------------- |
 | `zone` | IZone | The new FloodZone contract address    |
 
-### setHookFeeModifier
+### setModifiers
 
 ```solidity
-function setHookFeeModifier(
-    uint88 newModifier
+function setModifiers(
+    uint32 newHookFeeModifier,
+    uint32 newReferralRewardModifier
 ) external
 ```
 
-Set the hook fees params. Only callable by the owner.
+Set the hook fee & referral reward params. Only callable by the owner.
 
 #### Parameters:
 
-| Name          | Type   | Description           |
-| ------------- | ------ | --------------------- |
-| `newModifier` | uint88 | The new fee modifier  |
+| Name                        | Type   | Description                                |
+| --------------------------- | ------ | ------------------------------------------ |
+| `newHookFeeModifier`        | uint32 | The new hook fee modifier. 6 decimals.     |
+| `newReferralRewardModifier` | uint32 | The new referral reward modifier. 6 decimals. |
 
 ### setAmAmmEnabledOverride
 
@@ -417,6 +419,96 @@ Called by the FloodPlain contract after executing a rebalance order. Should tran
 | `hookArgs` | RebalanceOrderHookArgs    | The rebalance order hook arguments    |
 
 ## Events
+
+### Swap
+
+```solidity
+event Swap(
+    PoolId indexed id,
+    address indexed sender,
+    bool zeroForOne,
+    uint256 inputAmount,
+    uint256 outputAmount,
+    uint160 sqrtPriceX96,
+    int24 tick,
+    uint24 fee,
+    uint256 totalLiquidity
+)
+```
+
+Emitted for swaps between currency0 and currency1.
+
+#### Parameters:
+
+| Name             | Type    | Description                                                              |
+| ---------------- | ------- | ------------------------------------------------------------------------ |
+| `id`             | PoolId  | The abi encoded hash of the pool key struct for the pool that was modified |
+| `sender`         | address | The address that initiated the swap call, and that received the callback |
+| `zeroForOne`     | bool    | True if swapping token0 for token1, false otherwise                      |
+| `inputAmount`    | uint256 | The input token amount                                                   |
+| `outputAmount`   | uint256 | The output token amount                                                  |
+| `sqrtPriceX96`   | uint160 | The sqrt(price) of the pool after the swap, as a Q64.96                  |
+| `tick`           | int24   | The log base 1.0001 of the price of the pool after the swap              |
+| `fee`            | uint24  | The swap fee rate charged, 6 decimals                                    |
+| `totalLiquidity` | uint256 | The total virtual liquidity of the pool during and after the swap        |
+
+### SetZone
+
+```solidity
+event SetZone(IZone zone)
+```
+
+Emitted when the FloodZone contract address is set.
+
+#### Parameters:
+
+| Name   | Type  | Description                        |
+| ------ | ----- | ---------------------------------- |
+| `zone` | IZone | The new FloodZone contract address |
+
+### SetModifiers
+
+```solidity
+event SetModifiers(uint32 indexed hookFeeModifier, uint32 indexed referrerRewardModifier)
+```
+
+Emitted when the hook fee and referral reward modifiers are set.
+
+#### Parameters:
+
+| Name                     | Type   | Description                      |
+| ------------------------ | ------ | -------------------------------- |
+| `hookFeeModifier`        | uint32 | The new hook fee modifier        |
+| `referrerRewardModifier` | uint32 | The new referral reward modifier |
+
+### SetAmAmmEnabledOverride
+
+```solidity
+event SetAmAmmEnabledOverride(PoolId indexed id, BoolOverride indexed boolOverride)
+```
+
+Emitted when the am-AMM enabled override is set for a specific pool.
+
+#### Parameters:
+
+| Name           | Type         | Description             |
+| -------------- | ------------ | ----------------------- |
+| `id`           | PoolId       | The pool id             |
+| `boolOverride` | BoolOverride | The new override value  |
+
+### SetGlobalAmAmmEnabledOverride
+
+```solidity
+event SetGlobalAmAmmEnabledOverride(BoolOverride indexed boolOverride)
+```
+
+Emitted when the global am-AMM enabled override is set.
+
+#### Parameters:
+
+| Name           | Type         | Description             |
+| -------------- | ------------ | ----------------------- |
+| `boolOverride` | BoolOverride | The new override value  |
 
 ### Swap
 
