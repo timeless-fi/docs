@@ -8,8 +8,8 @@ const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Timeless Docs",
-    url: "https://docs.timelessfi.com",
+    title: "Bunni Docs",
+    url: "https://docs.bunni.xyz",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
@@ -17,7 +17,7 @@ const config = {
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: "timeless-fi", // Usually your GitHub org/user name.
+    organizationName: "bunniapp", // Usually your GitHub org/user name.
     projectName: "docs", // Usually your repo name.
 
     // Even if you don't use internalization, you can use this field to set useful
@@ -59,38 +59,32 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             navbar: {
-                title: "Timeless Docs",
+                title: "Bunni Docs",
                 logo: {
-                    alt: "Timeless",
+                    alt: "Bunni",
                     src: "img/logo.png",
                 },
                 items: [
                     {
                         type: "doc",
-                        docId: "intro",
+                        docId: "v2/overview",
                         position: "left",
                         label: "Introduction",
                     },
                     {
                         type: "doc",
-                        docId: "concepts/yield-tokenization",
+                        docId: "v2/technical/overview",
                         position: "left",
-                        label: "Concepts",
+                        label: "Contracts",
                     },
                     {
                         type: "doc",
-                        docId: "guides/lp",
+                        docId: "v2/guides/creating-a-pool/initialization",
                         position: "left",
                         label: "Guides",
                     },
                     {
-                        type: "doc",
-                        docId: "smart-contracts/architecture",
-                        position: "left",
-                        label: "Smart Contracts",
-                    },
-                    {
-                        href: "https://github.com/timeless-fi/docs",
+                        href: "https://github.com/bunniapp/docs",
                         label: "GitHub",
                         position: "right",
                     },
@@ -100,28 +94,11 @@ const config = {
                 style: "dark",
                 links: [
                     {
-                        title: "Github",
-                        items: [
-                            {
-                                label: "timeless",
-                                href: "https://github.com/timeless-fi/timeless",
-                            },
-                            {
-                                label: "swapper",
-                                href: "https://github.com/timeless-fi/swapper",
-                            },
-                            {
-                                label: "xPYT",
-                                href: "https://github.com/timeless-fi/xPYT",
-                            },
-                        ],
-                    },
-                    {
                         title: "Community",
                         items: [
                             {
                                 label: "Discord",
-                                href: "https://discord.gg/khDQVZm7E4",
+                                href: "https://discord.gg/timelessfi",
                             },
                             {
                                 label: "Twitter",
@@ -134,11 +111,7 @@ const config = {
                         items: [
                             {
                                 label: "Home page",
-                                href: "https://timelessfi.com",
-                            },
-                            {
-                                label: "Blog",
-                                href: "https://blog.timelessfi.com",
+                                href: "https://bunni.xyz",
                             },
                         ],
                     },
@@ -147,6 +120,7 @@ const config = {
             prism: {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
+                additionalLanguages: ['solidity'],
             },
             colorMode: {
                 // "light" | "dark"
